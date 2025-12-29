@@ -1,0 +1,7 @@
+{
+  "name": "Dra. Bruna Santos - Harmonização Facial Premium",
+  "description": "Uma landing page de alta conversão, mobile-first e luxuosa para agendamentos de Harmonização Facial, focada na autoridade da Dra. Bruna Santos.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
