@@ -1,7 +1,7 @@
 
-import React, { useState, useEffect } from 'react';
-import { ViewState, UserAnswers } from './types';
-import { EXPERT, IMAGES, QUIZ_QUESTIONS, DIFFERENTIALS } from './constants';
+import React, { useState } from 'react';
+import { ViewState, UserAnswers } from './types.ts';
+import { EXPERT, IMAGES, QUIZ_QUESTIONS, DIFFERENTIALS } from './constants.tsx';
 import { ChevronRight, ArrowRight, Instagram, MapPin, Check, MessageCircle, X, Calendar } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -94,10 +94,9 @@ const App: React.FC = () => {
     </div>
   );
 
-  // Result View Component
   const ResultView = () => (
     <div className="fixed inset-0 z-50 bg-[#0f1c14] overflow-y-auto overflow-x-hidden">
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 space-y-8 max-md mx-auto text-center">
+      <div className="min-h-screen flex flex-col items-center justify-center p-6 space-y-8 max-w-md mx-auto text-center">
         <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-gold shadow-2xl animate-float">
           <img src={IMAGES.hero} alt={EXPERT.name} className="w-full h-full object-cover" />
         </div>
@@ -139,7 +138,6 @@ const App: React.FC = () => {
     </div>
   );
 
-  // Initial Choice View Component
   const InitialChoice = () => (
     <div className="fixed inset-0 z-[60] bg-premium flex flex-col items-center justify-center p-6 space-y-8 text-center overflow-y-auto">
       <div className="relative group">
@@ -224,7 +222,6 @@ const App: React.FC = () => {
                 <MessageCircle className="w-7 h-7" />
                 Agendar consulta no WhatsApp
               </button>
-              {/* Microtexto removido conforme solicitado */}
             </div>
           </div>
         </div>
