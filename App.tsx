@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
-import { ViewState, UserAnswers } from './types.ts';
-import { EXPERT, IMAGES, QUIZ_QUESTIONS, DIFFERENTIALS } from './constants.tsx';
+import { ViewState, UserAnswers } from './types';
+import { EXPERT, IMAGES, QUIZ_QUESTIONS, DIFFERENTIALS } from './constants';
 import { ChevronRight, ArrowRight, Instagram, MapPin, Check, MessageCircle, X, Calendar } from 'lucide-react';
 
 const App: React.FC = () => {
