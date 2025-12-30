@@ -229,10 +229,11 @@ const App: React.FC = () => {
           </div>
         </div>
         
-        <div className="absolute right-[-15%] bottom-0 w-[130%] h-[80%] sm:w-[65%] sm:h-full opacity-60 sm:opacity-95 pointer-events-none transition-all duration-1000">
-          <img src={IMAGES.hero} alt={EXPERT.name} className="w-full h-full object-cover object-top" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1c14] via-[#0f1c14]/20 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f1c14] via-transparent to-transparent hidden sm:block"></div>
+        {/* Foto do Heroi Ajustada: Mobile igual ao Desktop (Preenchimento Total) */}
+        <div className="absolute right-0 bottom-0 w-full h-full opacity-95 pointer-events-none transition-all duration-1000 sm:w-[65%]">
+          <img src={IMAGES.hero} alt={EXPERT.name} className="w-full h-full object-cover object-top sm:object-right-top" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1c14] via-[#0f1c14]/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f1c14] via-transparent to-transparent"></div>
         </div>
       </section>
 
